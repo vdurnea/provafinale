@@ -5,5 +5,3 @@ CODE COVERAGE
 LATEST BUILD STATUS
 [![Java CI with Maven](https://github.com/vdurnea/provafinale/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/vdurnea/provafinale/actions/workflows/build.yml)
 
-
-.github/workflows/build.yml
