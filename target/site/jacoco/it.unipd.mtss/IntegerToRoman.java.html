@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IntegerToRoman.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">provafinale</a> &gt; <a href="index.source.html" class="el_package">it.unipd.mtss</a> &gt; <span class="el_source">IntegerToRoman.java</span></div><h1>IntegerToRoman.java</h1><pre class="source lang-java linenums">////////////////////////////////////////////////////////////////////
+// [CATERINA] [VALLOTTO] [2076434]
+// [VICTORIA] [DURNEA] [2076324]
+////////////////////////////////////////////////////////////////////
+
+package it.unipd.mtss;
+
+<span class="nc" id="L8">public class IntegerToRoman {</span>
+    public static String convert(int number) {
+
+<span class="fc bfc" id="L11" title="All 4 branches covered.">        if (number &lt; 1 || number &gt; 1000) {</span>
+<span class="fc" id="L12">            return &quot;Numero non valido&quot;;</span>
+        }
+<span class="fc" id="L14">        String roman = &quot;&quot;;</span>
+
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        while (number == 1000) {</span>
+<span class="fc" id="L17">            roman += &quot;M&quot;;</span>
+<span class="fc" id="L18">            number -= 1000;</span>
+        }
+
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        while (number &gt;= 900) {</span>
+<span class="fc" id="L22">            roman += &quot;CM&quot;;</span>
+<span class="fc" id="L23">            number -= 900;</span>
+        }
+
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        while (number &gt;= 500) {</span>
+<span class="fc" id="L27">            roman += &quot;D&quot;;</span>
+<span class="fc" id="L28">            number -= 500;</span>
+        }
+
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        while (number &gt;= 400) {</span>
+<span class="fc" id="L32">            roman += &quot;CD&quot;;</span>
+<span class="fc" id="L33">            number -= 400;</span>
+        }
+
+<span class="fc bfc" id="L36" title="All 2 branches covered.">        while (number &gt;= 100) {</span>
+<span class="fc" id="L37">            roman += &quot;C&quot;;</span>
+<span class="fc" id="L38">            number -= 100;</span>
+        }
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        while (number &gt;= 90) {</span>
+<span class="fc" id="L41">            roman += &quot;XC&quot;;</span>
+<span class="fc" id="L42">            number -= 90;</span>
+        }
+
+<span class="fc bfc" id="L45" title="All 2 branches covered.">        while (number &gt;= 50) {</span>
+<span class="fc" id="L46">            roman += &quot;L&quot;;</span>
+<span class="fc" id="L47">            number -= 50;</span>
+        }
+
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        while (number &gt;= 40) {</span>
+<span class="fc" id="L51">            roman += &quot;XL&quot;;</span>
+<span class="fc" id="L52">            number -= 40;</span>
+        }
+
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        while (number &gt;= 10) {</span>
+<span class="fc" id="L56">            roman += &quot;X&quot;;</span>
+<span class="fc" id="L57">            number -= 10;</span>
+        }
+<span class="fc bfc" id="L59" title="All 2 branches covered.">        while (number &gt;= 9) {</span>
+<span class="fc" id="L60">            roman += &quot;IX&quot;;</span>
+<span class="fc" id="L61">            number -= 9;</span>
+        }
+
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        while (number &gt;= 5) {</span>
+<span class="fc" id="L65">            roman += &quot;V&quot;;</span>
+<span class="fc" id="L66">            number -= 5;</span>
+        }
+
+<span class="fc bfc" id="L69" title="All 2 branches covered.">        while (number &gt;= 4) {</span>
+<span class="fc" id="L70">            roman += &quot;IV&quot;;</span>
+<span class="fc" id="L71">            number -= 4;</span>
+        }
+
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        while (number &gt; 0) {</span>
+<span class="fc" id="L75">            roman += &quot;I&quot;;</span>
+<span class="fc" id="L76">            number -= 1;</span>
+        }
+
+<span class="fc" id="L79">        return roman;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
