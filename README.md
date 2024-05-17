@@ -1,5 +1,4 @@
 # provafinale
-
 CODE COVERAGE
 [![Coverage Status](https://coveralls.io/repos/github/vdurnea/provafinale/badge.svg?branch=develop)](https://coveralls.io/github/vdurnea/provafinale?branch=develop)
 
